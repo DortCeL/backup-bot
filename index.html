@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>File Manager</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script defer src="renderer.js"></script>
+	</head>
+	<body>
+		<h1>File Manager</h1>
+		<button id="selectFile">Select File</button>
+		<p id="filePath"></p>
+		<input type="text" id="newName" placeholder="Enter new name" />
+		<button id="renameFile">Rename</button>
+		<!-- <button id="moveFile">Move</button>
+		<button id="deleteFile">Delete</button> -->
+
+		<div
+			class="bg-gray-900 text-white flex items-center justify-center h-screen"
+		>
+			<div class="bg-gray-800 p-6 rounded-lg shadow-lg w-96 text-center">
+				<h1 class="text-xl font-bold mb-4">Folder Manager</h1>
+
+				<button
+					id="addFolder"
+					class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600"
+				>
+					Add Folder
+				</button>
+
+				<ul id="folderList" class="mt-4 space-y-2">
+					<!-- Folder list will be displayed here -->
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
